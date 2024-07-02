@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LineBlock Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="icon" type="image/x-icon" href="assests/Icon.png">
     <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
 </head>
 <body class="bg-slate-900 h-screen font-mono">
     <nav class="bg-slate-950 p-4">
@@ -35,43 +40,225 @@
                 <p id="typing-text" class="font-mono font-bold text-center text-stone-50 text-8xl leading-normal"></p>
             </div>
             <div class="flex flex-col justify-center items-center text-center h-96">
-                <p class="font-bold text-neutral-50 text-2xl mb-10 leading-loose">I am a freelance full-stack developer specializing in the creation of web applications and software programs.</p>
+                <p class="font-bold text-neutral-50 text-2xl mb-10 leading-loose">Crafting digital solutions that deliver meaningful value to people, prioritizing usefulness and impact</p>
                 <button type="button" onClick='window.location="#About"' class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Know more about me</button>
             </div>
         </div>
         <div class="flex gap-5 justify-center">
             <a href="https://github.com/CodeSudden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+                <i class="fa-brands fa-github text-5xl" style="color: #ffffff;"></i></a>
             <a href="https://www.facebook.com/L1neBlock">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+                <i class="fa-brands fa-facebook text-5xl" style="color: #ffffff;"></i>
             </a>
             <a href="https://www.linkedin.com/in/jonel-azul-67b078252/">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                <i class="fa-brands fa-linkedin text-5xl" style="color: #ffffff;"></i>
             </a>
         </div>
     </div>
 
-    <div id="About" class="container mx-auto h-4/5">
+    <div id="About" class="container mx-auto h-full">
+        <div class="animate-contain text-white">
+            <p>I AM A</p>
+            <div class="animation text-center">
+                <div class="text-blue-400"><div>frontend</div></div>
+                <div class="text-yellow-200"><div>backend</div></div>
+                <div class="text-red-400"><div>SYSTEM</div></div>
+            </div>
+            <p>DEVELOPER</p>
+        </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="flex justify-center">
                 <img class="w-3/5 aspect-square mx-auto" src="assests/picture.png" alt="picture_profile">
             </div>
             <div class="flex justify-center items-center">
-                <p class="text-white text-2xl tracking-wider">Hello world! Im a Full Stack Developer with a degree in Information Systems and extensive experience as a freelance programmer. I specialize in developing programs from the ground up into fully functional websites, and I am proficient in debugging and deploying web applications. My journey with coding began in college and has continued to evolve, allowing me to build a robust skill set. I am confident in delivering high-quality outcomes for every project I undertake. Whether it's creating dynamic user interfaces or ensuring backend stability, I am dedicated to crafting seamless digital experiences.</p>
+                <p class="text-white text-2xl tracking-wider">A programmer with a degree in Information Systems and extensive experience as a freelance programmer. I specialize in developing programs from the ground up into fully functional websites, and I am proficient in debugging and deploying web applications. My journey with coding began in college and has continued to evolve, allowing me to build a robust skill set. I am confident in delivering high-quality outcomes for every project I undertake. Whether it's creating dynamic user interfaces or ensuring backend stability, I am dedicated to crafting seamless digital experiences.</p>
             </div>
         </div>
-        <div class="line-container">
-            <div class="line"></div>
-            <div class="text frontend" style="animation-delay: 0s;">Frontend</div>
-            <div class="text backend" style="animation-delay: 3s;">Backend</div>
-            <div class="text api" style="animation-delay: 6s;">API</div>
-            <div class="text deploy" style="animation-delay: 9s;">Deploy</div>
+        <div class="flex flex-col items-center justify-center text-white text-2xl mt-5">
+            <div class="flex flex-row justify-center space-x-16 mb-8">
+                <div>
+                    <p class="my-6 text-center font-black">Programming languages</p>
+                    <ul class="flex flex-row flex-wrap justify-center items-center space-x-4">
+                        <li class="relative group">
+                            <i class="devicon-html5-plain-wordmark text-5xl hover:text-orange-500"></i>
+                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                HTML5<br>Proficiency: Advanced<br>Experience: 3 years
+                            </span>
+                        </li>
+                        <li class="relative group">
+                            <i class="devicon-css3-plain-wordmark text-5xl hover:text-blue-500" ></i>
+                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                CSS3<br>Proficiency: Advanced<br>Experience: 3 years
+                            </span>
+                        </li>
+                        <li class="relative group">
+                            <i class="devicon-php-plain text-5xl hover:text-indigo-700"></i>
+                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                PHP<br>Proficiency: Intermediate<br>Experience: 2 Years
+                            </span>
+                        </li>
+                        <li class="relative group">
+                            <i class="devicon-javascript-plain text-5xl hover:text-yellow-500"></i>
+                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                JavaScript<br>Proficiency: Intermediate <br>Experience: 2 Years
+                            </span>
+                        </li>
+                        <li class="relative group">
+                            <i class="devicon-cplusplus-plain text-5xl hover:text-blue-700"></i>
+                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                C++<br>Proficiency: Beginner<br>Experience: 1 Years
+                            </span>
+                        </li>
+                        <li class="relative group">
+                            <i class="devicon-dot-net-plain-wordmark text-5xl hover:text-purple-700"></i>
+                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                .NET<br>Proficiency: Beginner<br>Experience: less than 6 months
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="my-6 text-center font-black">Frameworks and Libraries</p>
+                    <ul class="flex flex-row flex-wrap justify-center items-center space-x-4">
+                        <li class="relative group">
+                            <i class="devicon-sass-original text-5xl hover:text-pink-500"></i>
+                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                SASS<br>Proficiency: Beginner<br>Experience: less than 6 months
+                            </span>
+                        </li>
+                        <li class="relative group">
+                            <i class="devicon-tailwindcss-plain text-5xl hover:text-teal-500"></i>
+                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                Tailwind<br>Proficiency: Beginner<br>Experience: less than 6 months
+                            </span>
+                        </li>
+                        <li class="relative group">
+                            <i class="devicon-bootstrap-plain-wordmark text-5xl hover:text-purple-500"></i>
+                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                Bootstrap<br>Proficiency: Intermediate<br>Experience: 2 years
+                            </span>
+                        </li>
+                        <li class="relative group">
+                            <i class="devicon-react-original-wordmark text-5xl hover:text-cyan-500"></i>
+                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                REACT<br>Proficiency: Beginner<br>Experience: less than 6 months
+                            </span>
+                        </li>
+                        <li class="relative group">
+                            <i class="devicon-nodejs-plain-wordmark text-5xl hover:text-green-500"></i>
+                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                NodeJs<br>Proficiency: Beginner<br>Experience: less than 6 months
+                            </span>
+                        </li>
+                        <li class="relative group">
+                            <i class="devicon-express-original text-5xl hover:text-gray-700"></i>
+                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                JsExpress<br>Proficiency: Beginner<br>Experience: less than 6 months
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p class="my-6 text-center font-black">Tools</p>
+                <ul class="flex flex-row justify-center items-center space-x-4">
+                    <li class="relative group">
+                        <i class="devicon-apache-plain text-5xl hover:text-red-700"></i>
+                        <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            Apache<br>Proficiency: Intermediate<br>Experience: 2 years
+                        </span>
+                    </li>
+                    <li class="relative group">
+                        <i class="devicon-mongodb-plain-wordmark text-5xl hover:text-green-600"></i>
+                        <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            MongoDb<br>Proficiency: Beginner<br>Experience: less than 6 months
+                        </span>
+                    </li>
+                    <li class="relative group">
+                        <i class="devicon-vscode-plain-wordmark text-5xl hover:text-blue-400"></i>
+                        <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            VsCode<br>Proficiency: Beginner<br>Experience: 2 Years
+                        </span>
+                    </li>
+                    <li class="relative group">
+                        <i class="devicon-visualstudio-plain text-5xl hover:text-blue-700"></i>
+                        <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            VisualStudio<br>Proficiency: Beginner<br>Experience: less than 6 months
+                        </span>
+                    </li>
+                    <li class="relative group">
+                        <i class="devicon-github-original-wordmark text-5xl hover:text-gray-800"></i>
+                        <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            Github<br>Proficiency: Beginner<br>Experience: 1 Years
+                        </span>
+                    </li>
+                    <li class="relative group">
+                        <i class="devicon-postman-plain text-5xl hover:text-orange-600"></i>
+                        <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            Postman<br>Proficiency: Beginner<br>Experience: less than 6 months
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>      
+    </div>
+    <div id="Projects" class="h-full">
+        <div class="container mx-auto">
+            <h1 class="text-white text-center text-5xl">Projects</h1>
+            <div class="gallery my-14">
+                <div class="gallery-item" onclick="showModal('Alumplify', 'Alumni website built with a MERN stack technolgy')">
+                    <img src="assests/alumplify-home.JPG" alt="Image 1">
+                    <p class="text-center text-white text-2xl">Alumplify</p>
+                </div>
+                <div class="gallery-item" onclick="showModal('Footlocker', 'An E-Commerce Webapp for shoe include POS, CMS, and user authentication')">
+                    <img src="assests/footlocker.JPG" alt="Image 2">
+                    <p class="text-center text-white text-2xl">FOOTLOCKER</p>
+                </div>
+                <div class="gallery-item" onclick="showModal('School Management System', 'A Mockup program for School Management System with a basic crud and user authentication')">
+                    <img src="assests/SMS.JPG" alt="Image 2">
+                    <p class="text-center text-white text-2xl">School Management System</p>
+                </div>
+                <div class="gallery-item" onclick="showModal('Subsytem Booking', 'Integrate a Booking subsystem and a admin side to the existing sytem includes user authentication, API Integration')">
+                    <img src="assests/Booking Subsystem.png" alt="Image 2">
+                    <p class="text-center text-white text-2xl">Subsytem Booking</p>
+                </div>
+                <div class="gallery-item" onclick="showModal('GunShop', 'A small project with Vb.NET include POS, user authentication and using accdb')">
+                    <img src="assests/GunShop.JPG" alt="Image 2">
+                    <p class="text-center text-white text-2xl">GunShop</p>
+                </div>
+            </div>
+         
+            <div id="modal" class="modal flex">
+                <div class="modal-content relative">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <div id="modal-title" class="text-xl font-bold mb-2"></div>
+                    <div id="modal-description" class="description-container"></div>
+                </div>
+            </div>
         </div>
     </div>
-    <div id="Projects"></div>
-
-    <div id="Contact"></div>
-
+    <div id="Contact" class="h-4/5">
+        <div class="container w-1/2 mt-5 mx-auto">
+            <form id="contact-form" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                <h2 class="text-3xl font-bold mb-4 text-center">Contact Me</h2>
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                    <textarea id="message" name="message" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" rows="4" required></textarea>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <script>
         document.getElementById('nav-toggle').onclick = function() {
             document.getElementById('nav-content').classList.toggle('hidden');
