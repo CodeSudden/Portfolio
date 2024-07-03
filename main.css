@@ -69,14 +69,14 @@
 }
 
 .modal-content {
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 2rem;
     border-radius: 0.5rem;
     text-align: center;
-    max-width: 500px;
+    max-width: 800px;
     width: 100%;
+    position: relative;
 }
-
 .close {
     position: absolute;
     top: 1rem;
@@ -85,4 +85,57 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: #000;
+}
+.description-container {
+    margin-top: 1rem;
+    text-align: left;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slideshow-slide {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+.slideshow-slide img {
+    min-width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 1001;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.fade-in-section {
+    opacity: 0;
+    transition: opacity 1.5s ease-out;
+}
+.fade-in-section.is-visible {
+    opacity: 1;
+}
+
+.buttons a.disabled {
+    display: none;
 }

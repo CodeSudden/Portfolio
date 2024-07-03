@@ -7,13 +7,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <link rel="icon" type="image/x-icon" href="assests/Icon.png">
+    <link rel="icon" type="image/x-icon" href="assets/Icon.png">
     <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     
 </head>
-<body class="bg-slate-900 h-screen font-mono">
+<body class="bg-slate-900 h-auto font-mono">
     <nav class="bg-slate-950 p-4">
         <div class="container mx-auto flex justify-center items-center">
             <div class="block lg:hidden">
@@ -34,50 +34,52 @@
         </div>
     </nav>
     
-    <div class="container mx-auto h-4/5">
-        <div class="grid grid-cols-1 md:grid-cols-2 my-28 tracking-widest items-center">
-            <div class="flex justify-center items-center h-96">
-                <p id="typing-text" class="font-mono font-bold text-center text-stone-50 text-8xl leading-normal"></p>
+    <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 my-8 md:my-28 tracking-widest items-center">
+            <div class="flex justify-center items-center h-72 md:h-96">
+                <p id="typing-text" class="font-mono font-bold text-center text-stone-50 text-4xl md:text-8xl leading-normal"></p>
             </div>
-            <div class="flex flex-col justify-center items-center text-center h-96">
-                <p class="font-bold text-neutral-50 text-2xl mb-10 leading-loose">Crafting digital solutions that deliver meaningful value to people, prioritizing usefulness and impact</p>
-                <button type="button" onClick='window.location="#About"' class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Know more about me</button>
+            <div class="flex flex-col justify-center items-center text-center h-72 md:h-96">
+                <p class="font-bold text-neutral-50 text-lg md:text-2xl mb-4 md:mb-10 leading-loose">Crafting digital solutions that deliver meaningful value to people, prioritizing usefulness and impact</p>
+                <button type="button" onClick='window.location="#About"' class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm md:text-base px-4 py-2 mb-4 md:mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Know more about me</button>
             </div>
         </div>
+        <p class="text-white text-2xl md:text-3xl text-center my-4">CONNECT WITH ME</p>
         <div class="flex gap-5 justify-center">
             <a href="https://github.com/CodeSudden">
-                <i class="fa-brands fa-github text-5xl" style="color: #ffffff;"></i></a>
+                <i class="fab fa-github text-3xl md:text-5xl" style="color: #ffffff;"></i>
+            </a>
             <a href="https://www.facebook.com/L1neBlock">
-                <i class="fa-brands fa-facebook text-5xl" style="color: #ffffff;"></i>
+                <i class="fab fa-facebook text-3xl md:text-5xl" style="color: #ffffff;"></i>
             </a>
             <a href="https://www.linkedin.com/in/jonel-azul-67b078252/">
-                <i class="fa-brands fa-linkedin text-5xl" style="color: #ffffff;"></i>
+                <i class="fab fa-linkedin text-3xl md:text-5xl" style="color: #ffffff;"></i>
             </a>
         </div>
-    </div>
+    </div>    
 
-    <div id="About" class="container mx-auto h-full">
+    <div id="About" class="container mx-auto fade-in-section my-8 md:my-40">
         <div class="animate-contain text-white">
-            <p>I AM A</p>
+            <p class="text-3xl md:text-5xl w-auto">I AM A</p>
             <div class="animation text-center">
                 <div class="text-blue-400"><div>frontend</div></div>
                 <div class="text-yellow-200"><div>backend</div></div>
                 <div class="text-red-400"><div>SYSTEM</div></div>
             </div>
-            <p>DEVELOPER</p>
+            <p class="text-3xl md:text-5xl">DEVELOPER</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="flex justify-center">
-                <img class="w-3/5 aspect-square mx-auto" src="assests/picture.png" alt="picture_profile">
+                <img class="w-3/4 md:w-3/5 mx-auto rounded-lg" src="assets/picture.png" alt="picture_profile">
             </div>
-            <div class="flex justify-center items-center">
-                <p class="text-white text-2xl tracking-wider">A programmer with a degree in Information Systems and extensive experience as a freelance programmer. I specialize in developing programs from the ground up into fully functional websites, and I am proficient in debugging and deploying web applications. My journey with coding began in college and has continued to evolve, allowing me to build a robust skill set. I am confident in delivering high-quality outcomes for every project I undertake. Whether it's creating dynamic user interfaces or ensuring backend stability, I am dedicated to crafting seamless digital experiences.</p>
+            <div class="flex justify-center items-center w-auto">
+                <p class="text-white text-base md:text-xl tracking-wide max-w-prose">A programmer with a degree in Information Systems and extensive experience as a freelance programmer. I specialize in developing programs from the ground up into fully functional websites, and I am proficient in debugging and deploying web applications. My journey with coding began in college and has continued to evolve, allowing me to build a robust skill set. I am confident in delivering high-quality outcomes for every project I undertake. Whether it's creating dynamic user interfaces or ensuring backend stability, I am dedicated to crafting seamless digital experiences.</p>
             </div>
         </div>
-        <div class="flex flex-col items-center justify-center text-white text-2xl mt-5">
-            <div class="flex flex-row justify-center space-x-16 mb-8">
+        <div class="flex flex-col items-center justify-center text-white text-base md:text-xl mt-5 space-y-8">
+            <div class="flex flex-row justify-center space-x-8">
                 <div>
-                    <p class="my-6 text-center font-black">Programming languages</p>
+                    <p class="text-center my-6 font-black">Programming languages</p>
                     <ul class="flex flex-row flex-wrap justify-center items-center space-x-4">
                         <li class="relative group">
                             <i class="devicon-html5-plain-wordmark text-5xl hover:text-orange-500"></i>
@@ -177,7 +179,7 @@
                     <li class="relative group">
                         <i class="devicon-vscode-plain-wordmark text-5xl hover:text-blue-400"></i>
                         <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                            VsCode<br>Proficiency: Beginner<br>Experience: 2 Years
+                            VsCode<br>Proficiency: Intermediate<br>Experience: 2 Years
                         </span>
                     </li>
                     <li class="relative group">
@@ -202,63 +204,80 @@
             </div>
         </div>      
     </div>
-    <div id="Projects" class="h-full">
+    
+    <div id="Projects" class="h-auto w-auto fade-in-section my-40">
         <div class="container mx-auto">
             <h1 class="text-white text-center text-5xl">Projects</h1>
             <div class="gallery my-14">
-                <div class="gallery-item" onclick="showModal('Alumplify', 'Alumni website built with a MERN stack technolgy')">
-                    <img src="assests/alumplify-home.JPG" alt="Image 1">
+                <div class="gallery-item" onclick="showModal(0)">
+                    <img src="assets/alumplify-home.JPG" alt="Alumplify">
                     <p class="text-center text-white text-2xl">Alumplify</p>
                 </div>
-                <div class="gallery-item" onclick="showModal('Footlocker', 'An E-Commerce Webapp for shoe include POS, CMS, and user authentication')">
-                    <img src="assests/footlocker.JPG" alt="Image 2">
+                <div class="gallery-item" onclick="showModal(1)">
+                    <img src="assets/footlocker.JPG" alt="Footlocker">
                     <p class="text-center text-white text-2xl">FOOTLOCKER</p>
                 </div>
-                <div class="gallery-item" onclick="showModal('School Management System', 'A Mockup program for School Management System with a basic crud and user authentication')">
-                    <img src="assests/SMS.JPG" alt="Image 2">
+                <div class="gallery-item" onclick="showModal(2)">
+                    <img src="assets/SMS.JPG" alt="School Management System">
                     <p class="text-center text-white text-2xl">School Management System</p>
                 </div>
-                <div class="gallery-item" onclick="showModal('Subsytem Booking', 'Integrate a Booking subsystem and a admin side to the existing sytem includes user authentication, API Integration')">
-                    <img src="assests/Booking Subsystem.png" alt="Image 2">
+                <div class="gallery-item" onclick="showModal(3)">
+                    <img src="assets/Booking Subsystem.png" alt="Subsytem Booking">
                     <p class="text-center text-white text-2xl">Subsytem Booking</p>
                 </div>
-                <div class="gallery-item" onclick="showModal('GunShop', 'A small project with Vb.NET include POS, user authentication and using accdb')">
-                    <img src="assests/GunShop.JPG" alt="Image 2">
+                <div class="gallery-item" onclick="showModal(4)">
+                    <img src="assets/GunShop.JPG" alt="GunShop">
                     <p class="text-center text-white text-2xl">GunShop</p>
                 </div>
             </div>
-         
+        
             <div id="modal" class="modal flex">
                 <div class="modal-content relative">
                     <span class="close" onclick="closeModal()">&times;</span>
                     <div id="modal-title" class="text-xl font-bold mb-2"></div>
-                    <div id="modal-description" class="description-container"></div>
+                    <div class="slideshow-container">
+                        <div id="slideshow" class="slideshow-slide">
+                            <!-- Images will be inserted dynamically here -->
+                        </div>
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                    </div>
+                    <div class="buttons my-8">
+                        <a class="bg-blue-600 p-2 rounded-md text-white hover:bg-blue-700" id="code-link" href="#" target="_blank"></a>
+                        <a class="bg-blue-600 p-2 rounded-md text-white hover:bg-blue-700" id="website-link" href="#" target="_blank"></a>
+                    </div>
+                    <div id="modal-description" class="description-container font-sans text"></div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="Contact" class="h-4/5">
-        <div class="container w-1/2 mt-5 mx-auto">
-            <form id="contact-form" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-                <h2 class="text-3xl font-bold mb-4 text-center">Contact Me</h2>
-                <div class="mb-4">
-                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
-                    <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
-                </div>
-                <div class="mb-4">
-                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
-                    <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
-                </div>
-                <div class="mb-4">
-                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
-                    <textarea id="message" name="message" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" rows="4" required></textarea>
-                </div>
-                <div class="flex items-center justify-between">
-                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Send</button>
-                </div>
-            </form>
+    <div id="Contact" class="h-auto w-auto fade-in-section bg-gradient-to-b from-slate-900 to-slate-700 py-40">
+        <div class="container w-3/4 mt-5 mx-auto flex">
+            <div class="w-1/2 flex items-center justify-center">
+                <p class="text-white text-8xl">Let's have a talk</p>
+            </div>
+            <div class="w-1/2">
+                <form id="contact-form" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                        <textarea id="message" name="message" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" rows="4" required></textarea>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Send</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
+    
     <script>
         document.getElementById('nav-toggle').onclick = function() {
             document.getElementById('nav-content').classList.toggle('hidden');

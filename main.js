@@ -37,14 +37,116 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(slideText, 3000);
 });
 
-function showModal(title, description) {
-    document.getElementById('modal-title').innerText = title;
-    document.getElementById('modal-description').innerText = description;
+document.addEventListener('scroll', function() {
+    const fadeInSections = document.querySelectorAll('.fade-in-section');
+    fadeInSections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+            section.classList.add('is-visible');
+        } else {
+            section.classList.remove('is-visible');
+        }
+    });
+});
+
+let slideIndex = 0;
+const projects = [
+    {
+        title: 'Alumplify',
+        images: ['assets/alumplify-home.JPG', 'assets/dashboard.JPG', 'assets/login.JPG', 'assets/alumforum.JPG', 'assets/stories.JPG'],
+        description: 'Alumni Website Built with MERN Stack, As a collaborator on this project, I successfully implemented both the frontend and backend components of the alumni website. Additionally, I deployed the site using a combination of Render for API hosting and Netlify for frontend deployment.',
+        codeLink: null,
+        websiteLink: 'https://alumplify.netlify.app'
+    },
+    {
+        title: 'Footlocker',
+        images: ['assets/footlocker.JPG', 'assets/footlocker-login.JPG', 'assets/cart.JPG', 'assets/store.JPG', 'assets/profile.JPG', 'assets/admindas.JPG'],
+        description: 'This web application is designed for selling shoes online. It is built using PHP, HTML, CSS, and MySQL for the server-side functionality. The program includes the following features, Point of Sale (POS): Allows users to make purchases securely and efficiently. Content Management System (CMS): Enables easy management of product listings, inventory, and other content. User Authentication: Provides secure login and registration functionality for both customers and administrators.',
+        codeLink: 'https://github.com/CodeSudden/Footlocker',
+        websiteLink: null
+    },
+    {
+        title: 'School Management System',
+        images: ['assets/SMS.JPG', 'assets/admnlgn-class.JPG', 'assets/addcou-class.JPG','assets/stud-class.JPG', 'assets/addstud-class.JPG'],
+        description: 'Developed a mockup program for a School Management System, incorporating basic CRUD operations and user authentication. The program was built using HTML, CSS, PHP, and MySQL. The system enabled administrators to create, read, update, and delete student and teacher records, ensuring efficient management of school data. User authentication was implemented to secure the system, allowing only authorized users to access and modify information. The front-end was designed with HTML and CSS for a user-friendly interface, while PHP handled server-side logic and MySQL was used for database management.',
+        codeLink: 'https://github.com/CodeSudden/classroom_mgmnt_sys',
+        websiteLink: null
+    },
+    {
+        title: 'Subsytem Booking',
+        images: ['assets/Booking Subsystem.png', 'assets/login-booking.JPG', 'assets/services-booking.JPG', 'assets/cancel-booking.JPG', 'assets/refunds-booking.JPG',],
+        description: 'Integrate a booking subsystem and an admin panel into the existing system. This includes user authentication, CRUD operations, and API integration. Develop a responsive website using Bootstrap, with ASPX pages written in C++. additionally Implement an API to display and access data.',
+        codeLink: 'https://github.com/CodeSudden/BookingSubSystem',
+        websiteLink: null
+    },
+    {
+        title: 'GunShop',
+        images: ['assets/GunShop.JPG','assets/login-shop.JPG', 'assets/acc-shop.JPG', 'assets/reg-shop.JPG', 'assets/admn-shop.JPG', 'assets/repo-shop.JPG'],
+        description: 'Completed a small project using VB.NET that included a Point of Sale (POS) system, user authentication, and integration with an ACCDB database. The POS system managed sales transactions, inventory, and receipts, ensuring smooth and efficient operation. User authentication was implemented to secure the system, allowing only authorized personnel to access and perform transactions. The ACCDB database was used to store and manage all relevant data, providing a robust backend for the application. The project aimed to create a reliable and user-friendly system to manage their sales and inventory effectively.',
+        codeLink: 'https://github.com/CodeSudden/VBNET-SHOP',
+        websiteLink: null
+    }
+];
+
+function showModal(index) {
+    slideIndex = 0;
+    const project = projects[index];
+    document.getElementById('modal-title').innerText = project.title;
+    document.getElementById('modal-description').innerText = project.description;
+    const codeLink = document.getElementById('code-link');
+    const websiteLink = document.getElementById('website-link');
+
+    if (project.codeLink) {
+        codeLink.href = project.codeLink;
+        codeLink.innerText = 'View Code';
+        codeLink.classList.remove('disabled');
+        codeLink.style.pointerEvents = 'auto';
+    } else {
+        codeLink.href = '#';
+        codeLink.innerText = 'Unavailable';
+        codeLink.classList.add('disabled');
+        codeLink.style.pointerEvents = 'none';
+    }
+
+    if (project.websiteLink) {
+        websiteLink.href = project.websiteLink;
+        websiteLink.innerText = 'Visit Website';
+        websiteLink.classList.remove('disabled');
+        websiteLink.style.pointerEvents = 'auto';
+    } else {
+        websiteLink.href = '#';
+        websiteLink.innerText = 'Unavailable';
+        websiteLink.classList.add('disabled');
+        websiteLink.style.pointerEvents = 'none';
+    }
+    
+    const slideshow = document.getElementById('slideshow');
+    slideshow.innerHTML = '';  // Clear previous images
+    project.images.forEach(src => {
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = project.title;
+        slideshow.appendChild(img);
+    });
+    
+    updateSlides();
     document.getElementById('modal').style.display = 'flex';
 }
 
 function closeModal() {
     document.getElementById('modal').style.display = 'none';
+}
+
+function changeSlide(n) {
+    const slides = document.querySelectorAll('#slideshow img');
+    slideIndex = (slideIndex + n + slides.length) % slides.length;
+    updateSlides();
+}
+
+function updateSlides() {
+    const slides = document.querySelectorAll('#slideshow img');
+    const slideshow = document.getElementById('slideshow');
+    slideshow.style.transform = `translateX(-${slideIndex * 100}%)`;
 }
 
 window.onclick = function(event) {
