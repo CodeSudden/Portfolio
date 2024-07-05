@@ -14,7 +14,7 @@
     
 </head>
 <body class="bg-slate-900 h-auto font-mono">
-    <nav class="bg-slate-950 p-4">
+    <nav class=" bg-gradient-to-b from-slate-800 to-slate-900 p-4">
         <div class="container mx-auto flex justify-center items-center">
             <div class="block lg:hidden">
                 <button id="nav-toggle" class="text-white focus:outline-none">
@@ -25,10 +25,9 @@
             </div>
             <div id="nav-content" class="hidden lg:flex lg:items-center lg:w-auto w-full">
                 <ul class="lg:flex items-center justify-between text-base text-white pt-4 lg:pt-0">
-                    <li><a href="" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400">Home</a></li>
-                    <li><a href="#About" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400">About</a></li>
-                    <li><a href="#Projects" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400">Projects</a></li>
-                    <li><a href="#Contact" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400">Contact</a></li>
+                    <li><a href="#About" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 text-2xl">About</a></li>
+                    <li><a href="#Projects" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 text-2xl">Projects</a></li>
+                    <li><a href="#Contact" class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 text-2xl">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -59,16 +58,16 @@
     </div>    
 
     <div id="About" class="container mx-auto fade-in-section my-8 md:my-40">
-        <div class="animate-contain text-white">
-            <p class="text-3xl md:text-5xl w-auto">I AM A</p>
+        <div class="animate-contain text-white text-center md:text-left">
+            <p class="text-3xl md:text-5xl">I AM A</p>
             <div class="animation text-center">
                 <div class="text-blue-400"><div>frontend</div></div>
                 <div class="text-yellow-200"><div>backend</div></div>
                 <div class="text-red-400"><div>SYSTEM</div></div>
             </div>
             <p class="text-3xl md:text-5xl">DEVELOPER</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        </div>        
+        <div class="grid md:grid-cols-1 text-center lg:grid-cols-2 gap-8">
             <div class="flex justify-center">
                 <img class="w-3/4 md:w-3/5 mx-auto rounded-lg" src="assets/picture.png" alt="picture_profile">
             </div>
@@ -76,85 +75,85 @@
                 <p class="text-white text-base md:text-xl tracking-wide max-w-prose">A programmer with a degree in Information Systems and extensive experience as a freelance programmer. I specialize in developing programs from the ground up into fully functional websites, and I am proficient in debugging and deploying web applications. My journey with coding began in college and has continued to evolve, allowing me to build a robust skill set. I am confident in delivering high-quality outcomes for every project I undertake. Whether it's creating dynamic user interfaces or ensuring backend stability, I am dedicated to crafting seamless digital experiences.</p>
             </div>
         </div>
-        <div class="flex flex-col items-center justify-center text-white text-base md:text-xl mt-5 space-y-8">
-            <div class="flex flex-row justify-center space-x-8">
-                <div>
+        <div class="flex flex-col items-center justify-center text-white text-base lg:text-xl mt-5 space-y-8">
+            <div class="flex flex-col lg:flex-row justify-center space-y-8 lg:space-y-0 lg:space-x-8">
+                <div class="mx-6">
                     <p class="text-center my-6 font-black">Programming languages</p>
-                    <ul class="flex flex-row flex-wrap justify-center items-center space-x-4">
-                        <li class="relative group">
+                    <ul class="flex flex-wrap justify-center items-center space-x-4">
+                        <li class="relative group m-2">
                             <i class="devicon-html5-plain-wordmark text-5xl hover:text-orange-500"></i>
-                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="pointer-events-none absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 max-w-xs px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 HTML5<br>Proficiency: Advanced<br>Experience: 3 years
                             </span>
                         </li>
-                        <li class="relative group">
-                            <i class="devicon-css3-plain-wordmark text-5xl hover:text-blue-500" ></i>
-                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <li class="relative group m-2">
+                            <i class="devicon-css3-plain-wordmark text-5xl hover:text-blue-500"></i>
+                            <span class="pointer-events-none absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 max-w-xs px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 CSS3<br>Proficiency: Advanced<br>Experience: 3 years
                             </span>
                         </li>
-                        <li class="relative group">
+                        <li class="relative group m-2">
                             <i class="devicon-php-plain text-5xl hover:text-indigo-700"></i>
-                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="pointer-events-none absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 max-w-xs px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 PHP<br>Proficiency: Intermediate<br>Experience: 2 Years
                             </span>
                         </li>
-                        <li class="relative group">
+                        <li class="relative group m-2">
                             <i class="devicon-javascript-plain text-5xl hover:text-yellow-500"></i>
-                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="pointer-events-none absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 max-w-xs px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 JavaScript<br>Proficiency: Intermediate <br>Experience: 2 Years
                             </span>
                         </li>
-                        <li class="relative group">
+                        <li class="relative group m-2">
                             <i class="devicon-cplusplus-plain text-5xl hover:text-blue-700"></i>
-                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="pointer-events-none absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 max-w-xs px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 C++<br>Proficiency: Beginner<br>Experience: 1 Years
                             </span>
                         </li>
-                        <li class="relative group">
+                        <li class="relative group m-2">
                             <i class="devicon-dot-net-plain-wordmark text-5xl hover:text-purple-700"></i>
-                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="pointer-events-none absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 max-w-xs px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 .NET<br>Proficiency: Beginner<br>Experience: less than 6 months
                             </span>
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div class="mx-6">
                     <p class="my-6 text-center font-black">Frameworks and Libraries</p>
-                    <ul class="flex flex-row flex-wrap justify-center items-center space-x-4">
-                        <li class="relative group">
+                    <ul class="flex flex-wrap justify-center items-center space-x-4">
+                        <li class="relative group m-2">
                             <i class="devicon-sass-original text-5xl hover:text-pink-500"></i>
-                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="pointer-events-none absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 max-w-xs px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 SASS<br>Proficiency: Beginner<br>Experience: less than 6 months
                             </span>
                         </li>
-                        <li class="relative group">
+                        <li class="relative group m-2">
                             <i class="devicon-tailwindcss-plain text-5xl hover:text-teal-500"></i>
-                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="pointer-events-none absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 max-w-xs px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 Tailwind<br>Proficiency: Beginner<br>Experience: less than 6 months
                             </span>
                         </li>
-                        <li class="relative group">
+                        <li class="relative group m-2">
                             <i class="devicon-bootstrap-plain-wordmark text-5xl hover:text-purple-500"></i>
-                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="pointer-events-none absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 max-w-xs px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 Bootstrap<br>Proficiency: Intermediate<br>Experience: 2 years
                             </span>
                         </li>
-                        <li class="relative group">
+                        <li class="relative group m-2">
                             <i class="devicon-react-original-wordmark text-5xl hover:text-cyan-500"></i>
-                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="pointer-events-none absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 max-w-xs px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 REACT<br>Proficiency: Beginner<br>Experience: less than 6 months
                             </span>
                         </li>
-                        <li class="relative group">
+                        <li class="relative group m-2">
                             <i class="devicon-nodejs-plain-wordmark text-5xl hover:text-green-500"></i>
-                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="pointer-events-none absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 max-w-xs px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 NodeJs<br>Proficiency: Beginner<br>Experience: less than 6 months
                             </span>
                         </li>
-                        <li class="relative group">
+                        <li class="relative group m-2">
                             <i class="devicon-express-original text-5xl hover:text-gray-700"></i>
-                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="pointer-events-none absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 max-w-xs px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 JsExpress<br>Proficiency: Beginner<br>Experience: less than 6 months
                             </span>
                         </li>
@@ -163,94 +162,96 @@
             </div>
             <div>
                 <p class="my-6 text-center font-black">Tools</p>
-                <ul class="flex flex-row justify-center items-center space-x-4">
-                    <li class="relative group">
+                <ul class="flex flex-wrap justify-center items-center space-x-4">
+                    <li class="relative group m-2">
                         <i class="devicon-apache-plain text-5xl hover:text-red-700"></i>
-                        <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="pointer-events-none absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 max-w-xs px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             Apache<br>Proficiency: Intermediate<br>Experience: 2 years
                         </span>
                     </li>
-                    <li class="relative group">
+                    <li class="relative group m-2">
                         <i class="devicon-mongodb-plain-wordmark text-5xl hover:text-green-600"></i>
-                        <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="pointer-events-none absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 max-w-xs px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             MongoDb<br>Proficiency: Beginner<br>Experience: less than 6 months
                         </span>
                     </li>
-                    <li class="relative group">
+                    <li class="relative group m-2">
                         <i class="devicon-vscode-plain-wordmark text-5xl hover:text-blue-400"></i>
-                        <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="pointer-events-none absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 max-w-xs px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             VsCode<br>Proficiency: Intermediate<br>Experience: 2 Years
                         </span>
                     </li>
-                    <li class="relative group">
+                    <li class="relative group m-2">
                         <i class="devicon-visualstudio-plain text-5xl hover:text-blue-700"></i>
-                        <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="pointer-events-none absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 max-w-xs px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             VisualStudio<br>Proficiency: Beginner<br>Experience: less than 6 months
                         </span>
                     </li>
-                    <li class="relative group">
+                    <li class="relative group m-2">
                         <i class="devicon-github-original-wordmark text-5xl hover:text-gray-800"></i>
-                        <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="pointer-events-none absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 max-w-xs px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             Github<br>Proficiency: Beginner<br>Experience: 1 Years
                         </span>
                     </li>
-                    <li class="relative group">
+                    <li class="relative group m-2">
                         <i class="devicon-postman-plain text-5xl hover:text-orange-600"></i>
-                        <span class="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="pointer-events-none absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 max-w-xs px-2 py-1 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             Postman<br>Proficiency: Beginner<br>Experience: less than 6 months
                         </span>
                     </li>
                 </ul>
             </div>
-        </div>      
+        </div>
     </div>
     
     <div id="Projects" class="h-auto w-auto fade-in-section my-40">
-        <div class="container mx-auto">
-            <h1 class="text-white text-center text-5xl">Projects</h1>
+        <div class="container mx-auto px-4">
+            <h1 class="text-white text-center text-3xl sm:text-4xl md:text-5xl">Projects</h1>
             <div class="gallery my-14">
                 <div class="gallery-item" onclick="showModal(0)">
                     <img src="assets/alumplify-home.JPG" alt="Alumplify">
-                    <p class="text-center text-white text-2xl">Alumplify</p>
+                    <p class="text-center text-white text-lg sm:text-xl md:text-2xl">Alumplify</p>
                 </div>
                 <div class="gallery-item" onclick="showModal(1)">
                     <img src="assets/footlocker.JPG" alt="Footlocker">
-                    <p class="text-center text-white text-2xl">FOOTLOCKER</p>
+                    <p class="text-center text-white text-lg sm:text-xl md:text-2xl">FOOTLOCKER</p>
                 </div>
                 <div class="gallery-item" onclick="showModal(2)">
                     <img src="assets/SMS.JPG" alt="School Management System">
-                    <p class="text-center text-white text-2xl">School Management System</p>
+                    <p class="text-center text-white text-lg sm:text-xl md:text-2xl">School Management System</p>
                 </div>
                 <div class="gallery-item" onclick="showModal(3)">
                     <img src="assets/Booking Subsystem.png" alt="Subsytem Booking">
-                    <p class="text-center text-white text-2xl">Subsytem Booking</p>
+                    <p class="text-center text-white text-lg sm:text-xl md:text-2xl">Subsytem Booking</p>
                 </div>
                 <div class="gallery-item" onclick="showModal(4)">
                     <img src="assets/GunShop.JPG" alt="GunShop">
-                    <p class="text-center text-white text-2xl">GunShop</p>
+                    <p class="text-center text-white text-lg sm:text-xl md:text-2xl">GunShop</p>
                 </div>
             </div>
-        
-            <div id="modal" class="modal flex">
-                <div class="modal-content relative">
-                    <span class="close" onclick="closeModal()">&times;</span>
+    
+            <div id="modal" class="modal fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
+                <div class="modal-content bg-white p-6 rounded-lg relative w-11/12 md:w-2/3 lg:w-1/2">
+                    <span class="close absolute top-2 right-2 text-2xl cursor-pointer" onclick="closeModal()">&times;</span>
                     <div id="modal-title" class="text-xl font-bold mb-2"></div>
-                    <div class="slideshow-container">
+                    <div class="slideshow-container relative">
                         <div id="slideshow" class="slideshow-slide">
                             <!-- Images will be inserted dynamically here -->
                         </div>
-                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                        <a class="prev absolute left-0 top-1/2 transform -translate-y-1/2 text-3xl cursor-pointer" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next absolute right-0 top-1/2 transform -translate-y-1/2 text-3xl cursor-pointer" onclick="changeSlide(1)">&#10095;</a>
                     </div>
-                    <div class="buttons my-8">
-                        <a class="bg-blue-600 p-2 rounded-md text-white hover:bg-blue-700" id="code-link" href="#" target="_blank"></a>
-                        <a class="bg-blue-600 p-2 rounded-md text-white hover:bg-blue-700" id="website-link" href="#" target="_blank"></a>
+                    <div class="buttons my-8 flex justify-center space-x-4">
+                        <a class="bg-blue-600 p-2 rounded-md text-white hover:bg-blue-700" id="code-link" href="#" target="_blank">View Code</a>
+                        <a class="bg-blue-600 p-2 rounded-md text-white hover:bg-blue-700" id="website-link" href="#" target="_blank">View Website</a>
                     </div>
                     <div id="modal-description" class="description-container font-sans text"></div>
                 </div>
             </div>
         </div>
     </div>
+    
+
     <div id="Contact" class="h-auto w-auto fade-in-section bg-gradient-to-b from-slate-900 to-slate-700 py-40">
         <div class="container w-3/4 mt-5 mx-auto flex">
             <div class="w-1/2 flex items-center justify-center">
