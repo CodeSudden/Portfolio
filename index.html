@@ -15,7 +15,7 @@
 </head>
 <body class="bg-slate-900 h-auto font-mono">
     <nav class=" bg-gradient-to-b from-slate-800 to-slate-900 p-4">
-        <div class="container mx-auto flex justify-center items-center">
+        <div class="container mx-auto flex justify-end items-center">
             <div class="block lg:hidden">
                 <button id="nav-toggle" class="text-white focus:outline-none">
                     <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -250,15 +250,14 @@
             </div>
         </div>
     </div>
-    
 
-    <div id="Contact" class="h-auto w-auto fade-in-section bg-gradient-to-b from-slate-900 to-slate-700 py-40">
-        <div class="container w-3/4 mt-5 mx-auto flex">
-            <div class="w-1/2 flex items-center justify-center">
-                <p class="text-white text-8xl">Let's have a talk</p>
+    <div id="Contact" class="h-auto w-auto fade-in-section bg-gradient-to-b from-slate-900 to-slate-700 py-20 lg:py-40">
+        <div class="container w-full mt-5 mx-auto lg:flex lg:flex-row lg:items-center">
+            <div class="w-full lg:w-1/2 flex items-center justify-center mb-8 lg:mb-0">
+                <p class="text-white text-4xl lg:text-8xl text-center">Let's have a talk</p>
             </div>
-            <div class="w-1/2">
-                <form id="contact-form" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <div class="w-full lg:w-1/2">
+                <form id="contact-form" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 mx-4 lg:mx-0">
                     <div class="mb-4">
                         <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
                         <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
@@ -277,7 +276,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div>    
     
     <script>
         document.getElementById('nav-toggle').onclick = function() {
