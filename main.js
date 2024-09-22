@@ -53,37 +53,44 @@ let slideIndex = 0;
 const projects = [
     {
         title: 'Alumplify',
-        images: ['assets/alumplify-home.JPG', 'assets/dashboard.JPG', 'assets/login.JPG', 'assets/alumforum.JPG', 'assets/stories.JPG'],
+        images: ['assets/alumplify/alumplify-home.JPG', 'assets/alumplify/dashboard.JPG', 'assets/alumplify/login.JPG', 'assets/alumplify/alumforum.JPG', 'assets/alumplify/stories.JPG'],
         description: 'Alumni Website Built with MERN Stack, As a collaborator on this project, I successfully implemented both the frontend and backend components of the alumni website. Additionally, I deployed the site using a combination of Render for API hosting and Netlify for frontend deployment.',
         codeLink: null,
         websiteLink: 'https://alumplify.netlify.app'
     },
     {
         title: 'Footlocker',
-        images: ['assets/footlocker.JPG', 'assets/footlocker-login.JPG', 'assets/cart.JPG', 'assets/store.JPG', 'assets/profile.JPG', 'assets/admindas.JPG'],
+        images: ['assets/footlocker/footlocker.JPG', 'assets/footlocker/footlocker-login.JPG', 'assets/footlocker/cart.JPG', 'assets/footlocker/store.JPG', 'assets/footlocker/profile.JPG', 'assets/footlocker/admindas.JPG'],
         description: 'This web application is designed for selling shoes online. It is built using PHP, HTML, CSS, and MySQL for the server-side functionality. The program includes the following features, Point of Sale (POS): Allows users to make purchases securely and efficiently. Content Management System (CMS): Enables easy management of product listings, inventory, and other content. User Authentication: Provides secure login and registration functionality for both customers and administrators.',
         codeLink: 'https://github.com/CodeSudden/Footlocker',
         websiteLink: null
     },
     {
         title: 'School Management System',
-        images: ['assets/SMS.JPG', 'assets/admnlgn-class.JPG', 'assets/addcou-class.JPG','assets/stud-class.JPG', 'assets/addstud-class.JPG'],
+        images: ['assets/schoolms/SMS.JPG', 'assets/schoolms/admnlgn-class.JPG', 'assets/schoolms/addcou-class.JPG','assets/schoolms/stud-class.JPG', 'assets/schoolms/addstud-class.JPG'],
         description: 'Developed a mockup program for a School Management System, incorporating basic CRUD operations and user authentication. The program was built using HTML, CSS, PHP, and MySQL. The system enabled administrators to create, read, update, and delete student and teacher records, ensuring efficient management of school data. User authentication was implemented to secure the system, allowing only authorized users to access and modify information. The front-end was designed with HTML and CSS for a user-friendly interface, while PHP handled server-side logic and MySQL was used for database management.',
         codeLink: 'https://github.com/CodeSudden/classroom_mgmnt_sys',
         websiteLink: null
     },
     {
         title: 'Subsytem Booking',
-        images: ['assets/Booking Subsystem.png', 'assets/login-booking.JPG', 'assets/services-booking.JPG', 'assets/cancel-booking.JPG', 'assets/refunds-booking.JPG',],
+        images: ['assets/booking/Booking Subsystem.png', 'assets/booking/login-booking.JPG', 'assets/booking/services-booking.JPG', 'assets/booking/cancel-booking.JPG', 'assets/booking/refunds-booking.JPG',],
         description: 'Integrate a booking subsystem and an admin panel into the existing system. This includes user authentication, CRUD operations, and API integration. Develop a responsive website using Bootstrap, with ASPX pages written in C++. additionally Implement an API to display and access data.',
         codeLink: 'https://github.com/CodeSudden/BookingSubSystem',
         websiteLink: null
     },
     {
         title: 'GunShop',
-        images: ['assets/GunShop.JPG','assets/login-shop.JPG', 'assets/acc-shop.JPG', 'assets/reg-shop.JPG', 'assets/admn-shop.JPG', 'assets/repo-shop.JPG'],
+        images: ['assets/gunshop/GunShop.JPG','assets/gunshop/login-shop.JPG', 'assets/gunshop/acc-shop.JPG', 'assets/gunshop/reg-shop.JPG', 'assets/gunshop/admn-shop.JPG', 'assets/gunshop/repo-shop.JPG'],
         description: 'Completed a small project using VB.NET that included a Point of Sale (POS) system, user authentication, and integration with an ACCDB database. The POS system managed sales transactions, inventory, and receipts, ensuring smooth and efficient operation. User authentication was implemented to secure the system, allowing only authorized personnel to access and perform transactions. The ACCDB database was used to store and manage all relevant data, providing a robust backend for the application. The project aimed to create a reliable and user-friendly system to manage their sales and inventory effectively.',
         codeLink: 'https://github.com/CodeSudden/VBNET-SHOP',
+        websiteLink: null
+    },
+    {
+        title: 'Wordpress condo website',
+        images: ['assets/wp-condo/homepage.png', 'assets/wp-condo/condosel.png', 'assets/wp-condo/aboutus.png', 'assets/wp-condo/condoselect.png', 'assets/wp-condo/blog.png', 'assets/wp-condo/blog2.png' ],
+        description: 'A dynamic condominium website designed to showcase various condo listings with an intuitive search feature for selecting condos by location. The site includes a blog section to enhance SEO performance, built using Elementor for seamless UI design and Yoast SEO for optimized search engine visibility.',
+        codeLink: null,
         websiteLink: null
     }
 ];
