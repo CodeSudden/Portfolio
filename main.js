@@ -22,19 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     type();
-
-    const slidingText = document.querySelector('.sliding-text');
-    const words = slidingText.querySelectorAll('span');
-    let index2 = 0;
-
-    function slideText() {
-        words.forEach((word, i) => {
-            word.style.transform = `translateY(${(i - index2) * 2.5}rem)`;
-        });
-        index2 = (index2 + 1) % words.length;
-    }
-
-    setInterval(slideText, 3000);
 });
 
 document.addEventListener('scroll', function() {
@@ -161,19 +148,3 @@ window.onclick = function(event) {
         closeModal();
     }
 }
-
-(function(){
-    emailjs.init("FO5YEELgq5EU2ApFm");
-})();
-
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    emailjs.sendForm('service_4l2izwp', 'template_m3zqlnf', this)
-        .then(function() {
-            alert('Message sent successfully!');
-            exit();
-        }, function(error) {
-            alert('Failed to send message. Please try again later.');
-        });
-});

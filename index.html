@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="main.css">
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     
 </head>
 <body class="bg-slate-900 h-auto font-mono">
@@ -255,7 +256,7 @@
                 <p class="text-white text-4xl lg:text-8xl text-center">Let's have a talk</p>
             </div>
             <div class="w-full lg:w-1/2">
-                <form id="contact-form" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 mx-4 lg:mx-0">
+                <form method="post" id="contact-form" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 mx-4 lg:mx-0">
                     <div class="mb-4">
                         <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
                         <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
@@ -280,6 +281,24 @@
         document.getElementById('nav-toggle').onclick = function() {
             document.getElementById('nav-content').classList.toggle('hidden');
         }
+    </script>
+
+    <script>
+        (function(){
+            emailjs.init("FO5YEELgq5EU2ApFm");
+        })();
+
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            emailjs.sendForm('service_4l2izwp', 'template_m3zqlnf', this)
+                .then(function() {
+                    alert('Message sent successfully!');
+                    exit();
+                }, function(error) {
+                    alert('Failed to send message. Please try again later.');
+                });
+        });
     </script>
 </body>
 </html>
